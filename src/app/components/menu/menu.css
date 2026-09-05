@@ -1,0 +1,61 @@
+.menu-btn{
+  transition: font-size 0.3s ease;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+.menu-btn:hover{
+  background-color: grey;
+  font-size: 32px;
+}
+.menu-btn.open{
+  font-size: 0;
+}
+.navbar-container{
+ position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.navbar-container.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.barside{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 20dvw;
+  background-color: white;
+}
+.close-btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  justify-self: self-start;
+  transition: font-size 0.3s ease;
+}
+.close-btn:hover{
+  font-size: 18px;
+  background-color: gray;
+}
+.barside a{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: font-size 0.3s ease;
+}
+.barside a:hover{
+  font-size: 18px;
+  color: blue;
+  background-color: gray;
+}

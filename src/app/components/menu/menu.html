@@ -1,8 +1,8 @@
-<div>
-  <button class="menu-btn" (click)="togglemenu()">&#9776;</button>
+<button class="menu-btn" (click)="togglemenu()" [class.open]="isOpen">&#9776;</button>
+<div class="navbar-container" [class.open]="isOpen">
+  <nav class="barside" [class.open]="isOpen">
+    <div><button class="close-btn" (click)="togglemenu()">x</button></div>
+    <a routerLink="/home" (click)="togglemenu()">Home</a>
+    <a routerLink="/dashboard" (click)="togglemenu()">Dashboard</a>
+  </nav>
 </div>
-
-<nav class="barside" [class.open]="isOpen">
-  <a href="../../pages/home/home.html">Home</a>
-  <a href="../../pages/dashboard/dashboard.html">Dashboard</a>
-</nav>
