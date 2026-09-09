@@ -1,0 +1,33 @@
+.mainContent {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/img/ranger.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-size 0.3s ease;
+}
+
+.modal{
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  transition: opacity 1s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+}
+
+.saudacao{
+  color: blue;
+}
+
+@media (max-width: 768px) {
+  .mainContent{
+    background-size: auto 50dvw;
+  }
+  .modal{
+    opacity: 0.6;
+  }
+}

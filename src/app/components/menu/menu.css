@@ -36,6 +36,11 @@
   max-width: 20dvw;
   background-color: white;
 }
+.headMenu{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
 .close-btn{
   background: none;
   border: none;
@@ -48,6 +53,9 @@
   font-size: 18px;
   background-color: gray;
 }
+.fordLogo{
+  width: 80px;
+}
 .barside a{
   color: black;
   text-decoration: none;
@@ -58,4 +66,13 @@
   font-size: 18px;
   color: blue;
   background-color: gray;
+}
+
+@media (max-width: 768px) {
+  .fordLogo{
+    width: 40px;
+  }
+  .barside{
+    max-width: 40dvw;
+  }
 }
