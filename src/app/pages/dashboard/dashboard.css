@@ -1,27 +1,76 @@
-.mainContainer{
+.mainContainer {
   display: grid;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.tituloContainer{
+.tituloContainer {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.titulo{
+.titulo {
   color: rgb(0, 0, 216);
 }
-.modal-container{
+.modal-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 35px;
+  justify-content: center;
+  gap: 16px;
+  margin: 32px;
 }
-.fotoCarro{
+.fotoCarro {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.imgCarro{
+.imgCarro {
   height: 300px;
   width: auto;
+}
+.container {
+  padding: 16px 48px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+.opcaoCarro {
+  background-color: white;
+  border-radius: 2px;
+  width: 150px;
+  height: 30px;
+}
+h3 {
+  color: rgb(70, 100, 100);
+}
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+.numero {
+  color: rgb(0, 190, 230);
+}
+.medida{
+  color: rgb(110, 110, 110);
+}
+thead{
+  color: antiquewhite;
+  background-color: rgb(0, 0, 150);
+}
+
+@media (max-width: 768px) {
+  .modal-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .imgCarro {
+    height: auto;
+    width: 500px;
+  }
+  .container {
+    padding: 16px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
