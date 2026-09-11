@@ -1,6 +1,5 @@
 .mainContainer {
   display: grid;
-  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .tituloContainer {
   width: 100%;
@@ -39,7 +38,7 @@
   height: 30px;
 }
 h3 {
-  color: rgb(70, 100, 100);
+  color: rgb(100, 100, 100);
 }
 td {
   text-align: center;
@@ -49,7 +48,7 @@ td {
   color: rgb(0, 190, 230);
 }
 .medida{
-  color: rgb(110, 110, 110);
+  color: rgb(80, 80, 80);
 }
 thead{
   color: antiquewhite;

@@ -1,0 +1,28 @@
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100dvw;
+  height: 100dvh;
+}
+.img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:whitesmoke;
+}
+.imgLog{
+  height: auto;
+  width: 500px;
+  opacity: 0.6;
+}
+@media (max-width:768px) {
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+}
