@@ -3,9 +3,9 @@
   <div class="login-container">
     <img class="logoImg" src="img/ford.png" alt="">
     <h3 class="saudacao">Boas-Vindas</h3>
-    <form action="">
-      <input type="email" name="" id="" placeholder="E-mail">
-      <input type="password" name="" id="" placeholder="Senha">
+    <form #loginFrom="ngForm" (ngSubmit)="login()">
+      <input type="text" name="nome" placeholder="E-mail"[(ngModel)]="usuario.nome" required>
+      <input type="password" name="senha" placeholder="Senha" [(ngModel)]="usuario.senha" required>
       <button type="submit">Entrar</button>
     </form>
   </div>

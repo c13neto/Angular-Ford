@@ -5,12 +5,11 @@
     <div class="modal-container">
       <div class="container">
         <h3>Veículo</h3>
-        <select name="veiculon" id="veiculoid" class="opcaoCarro">
-          <option value="" selected disabled hidden></option>
-          <option value="">Mustang</option>
-          <option value="">Ranger</option>
-          <option value="">Territory</option>
-          <option value="">Branco Sport</option>
+        <select name="veiculon" id="veiculoid" class="opcaoCarro" (change)="veiculoEscolhido($event)">
+          <option value="" selected disabled hidden>Selecione uma opção</option>
+          <option *ngFor="let v of veiculos" [value]="v.id">
+            {{v.vehicle}}
+          </option>
         </select>
       </div>
       <div class="container">

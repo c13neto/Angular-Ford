@@ -3,7 +3,7 @@
   border: none;
   font-size: 28px;
   cursor: pointer;
-  padding: 8px;
+  padding: 16px;
   border-radius: 6px;
   position: relative;
   top: 10px;
@@ -96,6 +96,24 @@
 }
 
 .barside a:hover {
+  background-color: #f4f6f9;
+  color: #102a71;
+  border-left-color: #102a71;
+}
+.logout{
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border-left: 3px solid transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, border-left-color 0.2s ease;
+  border: none;
+  background-color: white;
+  display: flex;
+}
+.logout:hover{
   background-color: #f4f6f9;
   color: #102a71;
   border-left-color: #102a71;
