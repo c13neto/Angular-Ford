@@ -14,22 +14,22 @@
       </div>
       <div class="container">
         <h3>Total de vendas</h3>
-        <p class="numero">1000</p>
+        <p class="numero">{{veiculoSelecionado?.volumetotal || 0}}</p>
         <p class="medida">Unid.</p>
       </div>
       <div class="container">
         <h3>Conectados</h3>
-        <p class="numero">4000</p>
+        <p class="numero">{{veiculoSelecionado?.connected || 0}}</p>
         <p class="medida">Unid.</p>
       </div>
       <div class="container">
         <h3>Update Software</h3>
-        <p class="numero">3050</p>
+        <p class="numero">{{veiculoSelecionado?.softwareUpdates || 0}}</p>
         <p class="medida">Unid.</p>
       </div>
     </div>
     <div class="fotoCarro">
-      <img class="imgCarro" src="img/mustang.png" />
+      <img class="imgCarro" [src]="veiculoSelecionado?.img" />
     </div>
     <div class="table-responsive">
       <table>
