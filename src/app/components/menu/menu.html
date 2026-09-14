@@ -1,7 +1,7 @@
 <button class="menu-btn" (click)="togglemenu()" [class.open]="isOpen">&#9776;</button>
 <div class="navbar-container" [class.open]="isOpen">
   <nav class="barside" [class.open]="isOpen">
-    <div class="headMenu"><button class="close-btn" (click)="togglemenu()">x</button> <img class="fordLogo" src="img/ford.png" alt=""></div>
+    <div class="headMenu"><button class="close-btn" (click)="togglemenu()">&times;</button> <img class="fordLogo" src="img/ford.png" alt=""></div>
     <a routerLink="/home" (click)="togglemenu()">Home</a>
     <a routerLink="/dashboard" (click)="togglemenu()">Dashboard</a>
   </nav>

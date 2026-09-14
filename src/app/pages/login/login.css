@@ -14,15 +14,85 @@ main{
   justify-content: center;
   align-items: center;
   background-color:whitesmoke;
+  flex-direction: column;
+  padding: 16px;
+}
+.saudacao{
+  color:cadetblue;
 }
 .imgLog{
   height: auto;
   width: 500px;
   opacity: 0.6;
 }
+.logoImg{
+  width: auto;
+  height: 56px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+form input{
+  width: 32dvw;
+  height: 32px;
+  border-radius: 4px;
+  border:none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+button {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: white;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+button:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
 @media (max-width:768px) {
   main{
     display: flex;
     flex-direction: column;
   }
+  form input{
+  width: 48dvw;
+  height: 24px;
+}
 }

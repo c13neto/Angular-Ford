@@ -1,78 +1,112 @@
-.menu-btn{
-  transition: font-size 0.3s ease;
+.menu-btn {
   background: none;
   border: none;
-  font-size: 30px;
+  font-size: 28px;
   cursor: pointer;
-  position: fixed;
+  padding: 8px;
+  border-radius: 6px;
+  position: relative;
   top: 10px;
   left: 10px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
-.menu-btn:hover{
-  background-color: grey;
-  font-size: 32px;
+
+.menu-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.05);
 }
-.menu-btn.open{
-  font-size: 0;
+
+.menu-btn.open {
+  opacity: 0;
+  pointer-events: none;
 }
-.navbar-container{
- position: fixed;
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1000;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
+
 .navbar-container.open {
   opacity: 1;
   pointer-events: auto;
 }
-.barside{
+
+.barside {
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-width: 20dvw;
-  background-color: white;
+  width: 280px;
+  max-width: 80vw;
+  background-color: #ffffff;
+  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.headMenu{
+
+.navbar-container.open .barside {
+  transform: translateX(0);
+}
+
+.headMenu {
   display: flex;
   justify-content: space-between;
-  margin-right: 20px;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
 }
-.close-btn{
+
+.fordLogo {
+  width: 70px;
+  height: auto;
+}
+
+.close-btn {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 15px;
-  justify-self: self-start;
-  transition: font-size 0.3s ease;
-}
-.close-btn:hover{
   font-size: 18px;
-  background-color: gray;
+  color: #666;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
-.fordLogo{
-  width: 80px;
+
+.close-btn:hover {
+  background-color: #f0f0f0;
+  color: #111;
 }
-.barside a{
-  color: black;
+
+.barside a {
+  color: #333;
   text-decoration: none;
   cursor: pointer;
-  transition: font-size 0.3s ease;
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border-left: 3px solid transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, border-left-color 0.2s ease;
 }
-.barside a:hover{
-  font-size: 18px;
-  color: blue;
-  background-color: gray;
+
+.barside a:hover {
+  background-color: #f4f6f9;
+  color: #102a71;
+  border-left-color: #102a71;
 }
 
 @media (max-width: 768px) {
-  .fordLogo{
-    width: 40px;
+  .fordLogo {
+    width: 55px;
   }
-  .barside{
-    max-width: 40dvw;
+
+  .barside {
+    width: 240px;
   }
 }
