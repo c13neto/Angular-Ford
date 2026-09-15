@@ -45,12 +45,12 @@
         </thead>
         <tbody>
           <tr>
-            <td>9BWZZZ377VT004251</td>
-            <td>500.000 km</td>
-            <td>90%</td>
-            <td>Ligado</td>
-            <td>-12.9714</td>
-            <td>-38.5014</td>
+            <td>{{dadosVeiculo?.vin || 0}}</td>
+            <td>{{dadosVeiculo?.odometro || 0}}</td>
+            <td>{{dadosVeiculo?.nivelCombustivel || 0}}</td>
+            <td>{{dadosVeiculo?.status || 0}}</td>
+            <td>{{dadosVeiculo?.lat || 0}}</td>
+            <td>{{dadosVeiculo?.long || 0}}</td>
           </tr>
         </tbody>
       </table>
